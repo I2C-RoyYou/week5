@@ -1,0 +1,190 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-3 left-section ps-0 d-flex flex-column">
+            <div class="d-flex flex-column flex-grow-1">
+                <div class="logo">
+                    <a href='./'><img src="./assets/images/logo-ANSWER.svg" alt=""></a>
+                </div>
+                <ul class="menu list-unstyled flex-grow-1 bd-highlight">
+                    <li class="menu-item mb-4">
+                        <span class="material-icons me-3">poll</span>
+                        <span class="menu-name">Dashboard</span>
+                    </li>
+                    <li class="menu-item mb-4">
+                        <span class="material-icons me-3">question_answer</span>
+                        <span class="menu-name">Question</span>
+                    </li>
+                    <li class="menu-item mb-4 current ">
+                        <span class="material-icons me-3">assignment</span>
+                        <span class="menu-name">Assignment</span>
+                    </li>
+                    <li class="menu-item mb-4">
+                        <span class="material-icons me-3">video_library</span>
+                        <span class="menu-name">Course</span>
+                    </li>
+                    <li class="menu-item mb-4">
+                        <span class="material-icons me-3">people</span>
+                        <span class="menu-name">Admin</span>
+                    </li>
+                    <li class="menu-item mb-4">
+                        <span class="material-icons me-3">settings</span>
+                        <span class="menu-name">Settings</span>
+                    </li>
+                    
+                </ul>
+                <div class="user d-flex align-items-center">
+                    <img src="./assets/images/andychen.jpeg" alt="" class="user-pic me-3">
+                    <div>
+                        <span class="user-name d-block">Andy Chen</span>
+                        <span class="user-email d-block">andy0401@mail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-9 right-section d-flex flex-column">
+            <div class="top-section d-flex align-items-center">
+                <h1 class='me-5 mb-0'>Assignment</h1>
+                <div class="course flex-grow-1 user-select-none" role=button>
+                    <span class='align-middle'>All Course</span>
+                    <span class="material-icons color-primary align-middle">keyboard_arrow_down</span>
+                </div>
+                <div class='' >
+                    <span class="material-icons me-4 " >search</span>
+                    <span class="material-icons " >notifications_active</span>
+                </div>
+            </div>
+            <div class="bottom-section flex-grow-1 d-flex">
+                <div class="main-section me-3">
+                    <div class="filter user-select-none" role=button >
+                        <span class='me-2 align-middle' >All (4)</span><span class="material-icons color-primary align-middle">keyboard_arrow_down</span>
+                    </div>
+                    <ul class="main-list list-unstyled">
+                        <li class="current d-flex flex-wrap">
+                            <span class="category col-8">Chapter Assignment 2</span><span class="time col-4 text-end">4 hrs ago</span>
+                            <span class="subject text-truncate col-8">Please check this file for me, thanks!</span><span class="author col-4 text-end">Emily Wang</span>
+                        </li>
+                        <li class="d-flex flex-wrap">
+                            <span class="category col-8">Chapter Assignment 1</span><span class="time col-4 text-end">12 hrs ago</span>
+                            <span class="subject text-truncate col-8">My Homework</span><span class="author col-4 text-end">David Xu</span>
+                        </li>
+                        <li class="d-flex flex-wrap">
+                            <span class="category col-8">Final Assignment</span><span class="time col-4 text-end">18 hrs ago</span>
+                            <span class="subject text-truncate col-9">Have a problem with this ..asjfoaeifs</span><span class="author col-3 text-end">Tony Wei</span>
+                        </li>
+                        <li class="d-flex flex-wrap">
+                            <span class="category col-8">Final Assignment</span><span class="time col-4 text-end">19 hrs ago</span>
+                            <span class="subject text-truncate col-8">Did I do it right?</span><span class="author col-4 text-end">Christina Lin</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="detail-section flex-grow-1">
+                    <span class="comments text-end d-block">2 comments</span>
+                    <div class="assignment-section ">
+                        <div class="subject-section d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="category d-block">Chapter Assignment 2 / HTML&CSS</span>
+                                <span class="subject d-block">Please check this file for me, thanks!</span>
+                            </div>
+                            <span class="material-icons" >more_vert</span>
+                        </div>
+                        <div class="content-section">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/emilywang.jpeg" alt="" class="author-pic me-2">
+                                <div>
+                                    <span class="author-name d-block">Emily Wang</span>
+                                    <span class="time d-block">10:38 AM (4 hours ago)</span>
+                                </div>
+                            </div>
+                            <div class='content ms-5'>
+                                <p class="mb-3">
+                                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a 
+                                    question: Why in the following code the height of the <span class="color-primary">div</span> is bigger than the 
+                                    height of the <span class="color-primary">img</span> ? There is a gap below the image, but it doesn’t seems to be a 
+                                    padding/margin.<BR>
+                                    What is the gap or extra space below image?
+                                </p>
+                                <span class="attachment user-select-none d-inline-block" role="button" >
+                                    <span class="material-icons align-middle me-2">attach_file</span>
+                                    <span class="file-name align-middle" role="button" >HW-2-David.zip</span>
+                                </span>
+                                <hr class='mt-3 mb-0'>
+                            </div>
+                        </div>
+                        <div class="reply-section ">
+                            <div class="mce-section d-flex align-items-center">
+                                <span class="paragraph d-flex align-items-center" role="button">
+                                    <span class="fw-bold " >Body Text</span>
+                                    <span class="material-icons ms-2">arrow_drop_down</span>
+                                </span>
+
+                                <span class="material-icons ms-4">format_bold</span>
+                                <span class="material-icons ms-4">format_italic</span>
+                                <span class="material-icons ms-4">format_list_bulleted</span>
+                                <span class="material-icons ms-4">format_list_numbered</span>
+                                <span class="material-icons ms-4">image</span>
+                                <span class="material-icons ms-4">link</span>
+                                <span class="material-icons ms-4">code</span>
+
+                            </div>
+                            <div class='reply-text-section'>
+                                <textarea name="" id="" class="" rows=10 placeholder="Reply an answer…"></textarea>
+                                
+                                <div class='submit-section d-flex justify-content-end mt-3'>
+                                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cancel-modal">Cancel</button>
+                                    <button class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#replyModal" >Reply</button>
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="replyModal" tabindex="-1" aria-labelledby="replyModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="replyModalLabel">Reply</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Are you sure to reply?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-primary">Reply</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="cancel-modal" tabindex="-1" aria-labelledby="cancelModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="cancelModalLabel">Cancel</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Are you sure to cancel?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                                                <button type="button" class="btn btn-primary">Yes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
